@@ -47,8 +47,8 @@ Whenever possible ignore the coding standards currently in use by thousands of d
 Reverse the usual definitions of true and false. Sounds very obvious but it works great. You can hide:
 
 ```c
-#define TRUE 0
-#define FALSE 1
+ #define TRUE 0
+ #define FALSE 1
 ```
 
 somewhere deep in the code so that it is dredged up from the bowels of the program from some file that no-one ever looks at anymore. Then force the program to do comparisons like:
