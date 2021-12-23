@@ -38,24 +38,6 @@ struct snafu {
 } A;
 ```
 
-#### Hide Macro Definitions
-
-Hide macro definitions in amongst rubbish comments. The programmer will get bored and not finish reading the comments thus never discover the macro. Ensure that the macro replaces what looks like a perfectly legitimate assignment with some bizarre operation, a simple example:
-
-```c
-#define a=b a=0-b
-```
-
-#### Look Busy
-
-Use `define` statements to make made up functions that simply comment out their arguments, e.g.:
-
-```c
-#define fastcopy(x,y,z) /*xyz*/
-// ...
-fastcopy(array1, array2, size); /* does nothing */
-```
-
 #### One Missing File
 
 Make sure that one or more critical files are missing. This is best done with includes of includes. For example, in your main module, you have
