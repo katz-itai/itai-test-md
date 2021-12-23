@@ -153,16 +153,6 @@ PROCEDURE some_incredibly_complex_oper....
 ENDIF
 ```
 
-#### Bypassing Company Coding Standards
-
-Some companies have a strict policy of no numeric literals; you must use named constants. It is fairly easy to foil the intent of this policy. For example, one clever C++ programmer wrote:
-
-```cpp
-#define K_ONE 1
-#define K_TWO 2
-#define K_THOUSAND 999
-```
-
 #### A Real Life Example
 
 Here's a real life example written by a master. Let's look at all the different techniques he packed into this single C function.
