@@ -38,20 +38,6 @@ struct snafu {
 } A;
 ```
 
-#### One Missing File
-
-Make sure that one or more critical files are missing. This is best done with includes of includes. For example, in your main module, you have
-
-```c
-#include <stdcode.h>
-```
-
-`stdcode.h` is available. But in stdcode.h, there's a reference to
-
-```c
-#include "a:\\refcode.h"
-```
-
 #### Standards Schmandards
 
 Whenever possible ignore the coding standards currently in use by thousands of developers in your project's target language and environment. For example, insist on STL style coding standards when writing an MFC based application.
